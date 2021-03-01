@@ -1,0 +1,2 @@
+IGNORE_ATTRS = ['add_callback', 'alive', 'child_list_key', 'children', 'collection', 'color', 'convert_to_type', 'cover', 'get', 'get_all_properties', 'get_backlinks', 'get_browseable_url', 'get_property',
+                'icon', 'id', 'is_alias', 'is_template', 'locked', 'move_to', 'parent', 'refresh', 'remove', 'remove_callbacks', 'role', 'schema', 'set', 'set_property', 'space_info', 'title_plaintext', 'type']
