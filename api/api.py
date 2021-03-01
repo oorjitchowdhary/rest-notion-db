@@ -1,8 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, redirect
 from notion.client import NotionClient
 from .utils import IGNORE_ATTRS
 
 app = Flask(__name__)
+
+
+@app.route('/', methods=['GET'], strict_slashes=False)
+def index():
+    return redirect('https://github.com/oorjitchowdhary/rest-notion-db')
 
 
 @app.route('/page/<pid>', methods=['GET'], strict_slashes=False)
