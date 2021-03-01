@@ -16,7 +16,7 @@ Simply replace the `notion.so` to `rest-notion-db.herokuapp.com` on your databas
 
 In case of an auth-secured page, send your `token_v2` cookie as a Authorization Bearer Token header in the request.
 
-#### Queries
+**Queries**<br>
 Currently, you can sort and limit the data using request parameters.
 
 For example:<br/>
@@ -25,7 +25,7 @@ For example:<br/>
 
 You can add multiple query parameters to sort the data as per your use-cases.
 
-#### Demo
+**Demo**<br/>
 Database: [User Research Template](https://www.notion.so/1d595a4c3f9a4254b332587507e87267?v=43045489a1a44683b04154a85a562898)
 
 Request: `https://rest-notion-db.herokuapp.com/page/1d595a4c3f9a4254b332587507e87267?v=43045489a1a44683b04154a85a562898&name=desc&limit=2`<br/>
@@ -51,20 +51,20 @@ Response:
 ```
 
 ### POST data
-Endpoint: `/page`
+Endpoint: `/post`
 
 Send the Notion Page URL and the `token_v2` cookie, in case of a private page, as request headers along with the JSON POST data.
 
 In order to successfully POST, the request data keys should match the schema names and the values should match the schema datatypes.
 
-#### Demo
+**Demo**<br/>
 Database: [User Research Template](https://www.notion.so/1d595a4c3f9a4254b332587507e87267?v=43045489a1a44683b04154a85a562898)
 
 Request:<br/>
 Headers
 ```json
 {
-    "Authorization: "Bearer <TOKEN_V2>",
+    "Authorization": "Bearer <TOKEN_V2>",
     "Notion-Page-Url": "<DB_PAGE_URL>",
     "Content-Type": "application/json"
 }
@@ -82,7 +82,7 @@ Body
 Response:
 ```json
 {
-    "message": "Added data to table successfully."
+    "message": "Added data to table successfully.",
     "success": true
 }
 ```
