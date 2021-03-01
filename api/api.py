@@ -81,3 +81,7 @@ def post():
         response['error_fields'] = error_fields
 
     return jsonify(response)
+
+
+if __name__ == '__main__':
+    app.run(port=5000)
