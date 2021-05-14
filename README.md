@@ -1,6 +1,9 @@
 # rest-notion-db
 A RESTful way to use your Notion tables as a database.
 
+### UPDATE
+As of May 11, 2021, the [official Notion API](https://developers.notion.com/) is available in its public beta version. I'd recommend you to use that.
+
 ## Use-cases
 Form submissions or frontend websites, use one database that is understood by everyone at your workplace for all your needs.
 
